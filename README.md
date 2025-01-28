@@ -1,11 +1,8 @@
-
 <p align="center">
  <img src="https://web3auth.io/images/torus-icon-blue-3.svg" align="center" alt="Ledger" />
  <h2 align="center">Torus Wagmi Connector</h2>
  <p align="center"><a href="https://github.com/tmm/wagmi">Wagmi</a> Connector for Torus Wallet</p>
 </p>
-
-
 
 # About
 
@@ -20,19 +17,19 @@ Here is an example of a wagmi client using both the `TorusConnector` and the def
 
 ```js
 import { TorusConnector } from "@toruslabs/torus-wagmi-connector";
-import { chain, configureChains, createClient } from 'wagmi';
-import { InjectedConnector } from 'wagmi/connectors/injected';
-import { publicProvider } from 'wagmi/providers/public';
+import { chain, configureChains, createClient } from "wagmi";
+import { InjectedConnector } from "wagmi/connectors/injected";
+import { publicProvider } from "wagmi/providers/public";
 
 const { chains, provider } = configureChains(
   [chain.mainnet, chain.polygon],
-  [publicProvider()]
+  [publicProvider()],
 );
 
 const wagmiClient = createClient({
   autoConnect: true,
   connectors: [
-    new TorusConnector({ 
+    new TorusConnector({
       chains: chains,
       options: {
         chainId: "0x1",
