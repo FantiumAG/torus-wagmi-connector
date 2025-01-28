@@ -1,17 +1,17 @@
 {
     "name": "@fantium/torus-wagmi-connector",
-    "version": "1.0.0-alpha.0",
+    "version": "1.0.0-alpha.1",
     "description": "wagmi v2 connector to connect with Torus Wallet",
     "repository": "github:FantiumAG/torus-wagmi-connector",
     "license": "MIT",
     "type": "module",
     "main": "./dist/index.cjs",
-    "module": "./dist/index.mjs",
+    "module": "./dist/index.js",
     "types": "dist/index.d.ts",
     "exports": {
         ".": {
             "types": "./dist/index.d.ts",
-            "import": "./dist/index.mjs",
+            "import": "./dist/index.js",
             "require": "./dist/index.cjs"
         }
     },
