@@ -5,14 +5,14 @@
     "repository": "github:FantiumAG/torus-wagmi-connector",
     "license": "MIT",
     "type": "module",
-    "main": "./dist/csj/index.js",
-    "module": "./dist/esm/index.js",
-    "types": "dist/types/index.d.ts",
+    "main": "./dist/index.cjs",
+    "module": "./dist/index.mjs",
+    "types": "dist/index.d.ts",
     "exports": {
         ".": {
-            "types": "./dist/types/index.d.ts",
-            "import": "./dist/esm/index.js",
-            "require": "./dist/csj/index.js"
+            "types": "./dist/index.d.ts",
+            "import": "./dist/index.mjs",
+            "require": "./dist/index.cjs"
         }
     },
     "keywords": ["torus", "wagmi", "connector", "wallet"],
